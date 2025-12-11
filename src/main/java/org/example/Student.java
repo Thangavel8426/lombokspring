@@ -1,11 +1,11 @@
 package org.example;
 
-import lombok.Data;
-
-@Data
 public class Student {
     private int age;
     private int roll;
+    public void write(){
+        System.out.println("i am writnng");
+    }
 
 
 
