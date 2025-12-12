@@ -12,8 +12,14 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context= new AnnotationConfigApplicationContext(Myconfiguration.class);
-        Student s1=context.getBean(Student.class);
+        Student1 s1=context.getBean(Student1.class);
         s1.write();
+        Student2 s2= context.getBean(Student2.class);
+        System.out.println(s2.getA());
+        System.out.println(s2.getStr());
+        System.out.println(s2.getB());
+
+
 
 
     }
